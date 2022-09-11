@@ -1,0 +1,2 @@
+number,id,type,size,opendate,openprice,closeprice,closedate,isclosed,closetype,p/l,AccPL,qty,executions
+1.0,XTZUSDT-2022-08-08 00:00:00,Buy,1000.0,2022-08-08,1.928,1.908,2022-08-08 15:19:59.999000,True,sl,-11.87,-11.87,518.672,open->sl
