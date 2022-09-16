@@ -2,3 +2,7 @@ streamlit
 pandas
 numpy
 requests
+streamlit-aggrid
+streamlit-authenticator
+streamlit-option-menu
+deta

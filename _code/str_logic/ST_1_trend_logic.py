@@ -106,7 +106,7 @@ class ST_1_strategy:
                     self.close_position(time, price, closetype)
                     self.open_position(row)
 
-    def run_strategy(self):
+    def run_strategy(self,locally=True):
         self.trend_col = f'ST-{float(self._period)}-{float(self._multiplier)}'
         # self.trend_col='isUpTrend'
 
@@ -150,3 +150,6 @@ class ST_1_strategy:
 
             csvMgr.AddMeta(meta)
         return self.simulating_res_df
+
+    def get_original_tested_df(self):
+        return self.data_df
