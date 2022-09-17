@@ -1,14 +1,14 @@
 
 from deta import Deta
 import os
-from exceptions import CredentialsError, ResetError, RegisterError, ForgotError, UpdateError
+from .exceptions import CredentialsError, ResetError, RegisterError, ForgotError, UpdateError
 # os.environ['API_KEY'] = 'a0j6239f_Tu6tSaLmsc8t7RoaWh343FW6aTBc1f9Z'
 cts={'name':'full_name','User Name':'user_name','email':'email'}
 os.environ['API_USER'] = 'khaled'
 class deta_db:
     def __init__(self,db_name,key=None) -> None:
         self.db_name=db_name
-        env_key=os.getenv('API_KEY')
+        env_key=os.getenv('API_KEY') if os.getenv('API_KEY')!=None else ''
         self.connection=Deta(key if key is not None else env_key)
         self.connect()
     def connect(self):

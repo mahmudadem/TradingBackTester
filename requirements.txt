@@ -6,3 +6,4 @@ streamlit-aggrid
 streamlit-authenticator
 streamlit-option-menu
 deta
+playsound==1.2.2

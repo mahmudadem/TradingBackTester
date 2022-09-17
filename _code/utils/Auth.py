@@ -1,11 +1,11 @@
 from datetime import datetime
-from tkinter.messagebox import NO
 import streamlit as st 
-from Deta_db import user_db
 import re
 import streamlit_authenticator as  stAuth
-from custom_components import *
 import streamlit_option_menu as op_menu
+from _code.utils.Deta_db import user_db
+from _code.utils.exceptions import *
+from _code.constants.constants import messeges
 
 class UserAuth:
     def __init__(self,callBack=None) -> None:
@@ -40,9 +40,11 @@ class UserAuth:
                 elif menu=='sign up':
                     self.signup() 
                 else :
-                    st.header('You are in Geust Mode you will not be able to store data of your tests!')       
+                    st.header('Geust Mode ')
+                    st.markdown(messeges().guest)       
         else :
-            self.logout()
+            # self.logout()
+            pass
     
     def check_available(self,field,value):
         data=self.db_ref.fetch(query={field:value})
@@ -139,7 +141,7 @@ class UserAuth:
         if st.session_state.authentication_status:
             self.user_authenticated=True
     def login(self):
-        name,authentication_status,username=self.authenticator.login('logines',location='main')
+        name,authentication_status,username=self.authenticator.login('login',location='main')
         if st.session_state['authentication_status']:
                 self.user_authenticated=True
                 # st.session_state['auth_object']=self

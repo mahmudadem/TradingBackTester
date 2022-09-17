@@ -11,7 +11,7 @@
             "type": "python",
             "request": "launch",
             // "module": "Home",
-            "justMyCode": true,
+            "justMyCode": false,
             "program": "C:/Users/M/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0/LocalCache/local-packages/Python39/Scripts/streamlit.exe",  // /home/xx/tmp/venv/bin/streamlit",
             "args": [
             "run",

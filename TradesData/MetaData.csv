@@ -1,2 +1,8 @@
 number,id,execution_date,strategy_name,strategy_config,result_path
-0,2022-XTZUSDT-5m-10-10-1-1,11-09-2022 23:28,ST1,"{'ticker': 'XTZUSDT', 'timeframe': '5m', 'period': 10.0, 'multiplier': 10.0, 'tp': 1.0, 'sl': 1.0, 'year': 2022}",./TradesData/ST1/P10.0-M10.0/5m/XTZUSDT-5m-ST1-1.0-1.0.csv
+0,2022-XTZUSDT-5m-10.0-10.0-1.0-1.0,17-09-2022 11:32,ST1,"{'ticker': 'XTZUSDT', 'timeframe': '5m', 'period': 10.0, 'multiplier': 10.0, 'tp': 1.0, 'sl': 1.0, 'year': 2022}",./TradesData/ST1/P10.0-M10.0/5m/XTZUSDT-5m-ST1-1.0-1.0.csv
+1,2022-XTZUSDT-5m-10.0-10.2-1.0-1.0,16-09-2022 09:55,ST1,"{'ticker': 'XTZUSDT', 'timeframe': '5m', 'period': 10.0, 'multiplier': 10.2, 'tp': 1.0, 'sl': 1.0, 'year': 2022}",./TradesData/ST1/P10.0-M10.2/5m/XTZUSDT-5m-ST1-1.0-1.0.csv
+2,2022-LINKUSDT-5m-10.0-10.0-25.0-25.0,16-09-2022 10:08,ST1,"{'ticker': 'LINKUSDT', 'timeframe': '5m', 'period': 10.0, 'multiplier': 10.0, 'tp': 25.0, 'sl': 25.0, 'year': 2022}",./TradesData/ST1/P10.0-M10.0/5m/LINKUSDT-5m-ST1-25.0-25.0.csv
+3,2022-LINKUSDT-5m-20.0-20.0-25.0-25.0,16-09-2022 10:17,ST1,"{'ticker': 'LINKUSDT', 'timeframe': '5m', 'period': 20.0, 'multiplier': 20.0, 'tp': 25.0, 'sl': 25.0, 'year': 2022}",./TradesData/ST1/P20.0-M20.0/5m/LINKUSDT-5m-ST1-25.0-25.0.csv
+4,2022-ZECUSDT-5m-10.0-20.0-10.0-25.0,16-09-2022 10:16,ST1,"{'ticker': 'ZECUSDT', 'timeframe': '5m', 'period': 10.0, 'multiplier': 20.0, 'tp': 25.0, 'sl': 10.0, 'year': 2022}",./TradesData/ST1/P10.0-M20.0/5m/ZECUSDT-5m-ST1-10.0-25.0.csv
+5,2022-AVAXUSDT-5m-10.0-20.0-50.0-50.0,16-09-2022 10:52,ST1,"{'ticker': 'AVAXUSDT', 'timeframe': '5m', 'period': 10.0, 'multiplier': 20.0, 'tp': 50.0, 'sl': 50.0, 'year': 2022}",./TradesData/ST1/P10.0-M20.0/5m/AVAXUSDT-5m-ST1-50.0-50.0.csv
+6,2022-ETHUSDT-5m-10.0-10.0-34.0-34.0,17-09-2022 08:10,ST1,"{'ticker': 'ETHUSDT', 'timeframe': '5m', 'period': 10.0, 'multiplier': 10.0, 'tp': 34.0, 'sl': 34.0, 'year': 2022}",./TradesData/ST1/P10.0-M10.0/5m/ETHUSDT-5m-ST1-34.0-34.0.csv

@@ -1,5 +1,10 @@
 
-
+class messeges:
+  guest='''#
+  In **Guest mode** you will be able to run test of your choice, but not to save your
+  favourit settings and tests configurations, it's better to **signup/login**  with your account for that matter.
+  
+  '''
 class constants:
 
     TradesfileColumns = ['number','type','qty','size', 'opendate','openprice','closeprice','closedate','isclosed','closetype','p/l','AccPL','executions','id']

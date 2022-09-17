@@ -33,7 +33,7 @@ def AddMeta(meta):
         st_config=meta['st_config']
         result_path=meta['path']
         exe_date=datetime.strftime(datetime.now(),"%d-%m-%Y %H:%M")
-        id=f'{st_config["year"]}-{st_config["ticker"]}-{st_config["timeframe"]}-{int(st_config["period"])}-{int(st_config["multiplier"])}-{int(st_config["sl"])}-{int(st_config["tp"])}'
+        id=f'{st_config["year"]}-{st_config["ticker"]}-{st_config["timeframe"]}-{str(st_config["period"])}-{str(st_config["multiplier"])}-{str(st_config["sl"])}-{str(st_config["tp"])}'
         meta_file_path=f'{cts.db_base_dir}/MetaData.csv'
         check_file_exist(meta_file_path,createIfNot=True,filetype="M")
         Meta_df=pd.read_csv(meta_file_path)

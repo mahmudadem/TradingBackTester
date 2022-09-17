@@ -1,42 +1,34 @@
-from datetime import datetime
-from queue import Empty
 import time
 import streamlit as st
-import pandas as pd 
-import numpy as np
-from _code.constants.constants import constants as cts
-from _code.str_logic.ST_1_trend_logic import ST_1_strategy 
+from _code.utils.Auth import UserAuth
 
+st.session_state
+def authrized_content():
+    st.write('You authrized') 
+c,c1,c2= st.columns(3)
+with c1:
+    with st.spinner('middle loading'):
+        time.sleep(0.5)
+        # st.text_area('')
 
-st.set_page_config(
-     page_title="Ex-stream-ly Cool App",
-     page_icon="🧊",
-     layout="wide",
-     initial_sidebar_state="expanded",
-     menu_items={
-         'Get Help': 'https://www.extremelycoolapp.com/help',
-         'Report a bug': "https://www.extremelycoolapp.com/bug",
-         'About': "# This is a header. This is an *extremely* cool app!"
-     }
- )
+page_content=st.empty()
 
-# st.error("Do you really, really, wanna do this?")
-# if st.button("Yes I'm ready to rumble"):
-#     st.text('asd')
+if 'auth_object' not in st.session_state: 
+    user_auth= UserAuth()
+else :
+    user_auth=st.session_state['auth_object']
 
-
-# import streamlit as st
-# import time
-
-
-# placeholder = st.empty()
-# btn = placeholder.button('Button', disabled=False, key='1')
-
-
-# if btn:
-#     co=placeholder.container()
-#     time.sleep(1)
-#     co.text('asd')
-#     b=co.button('aa')
-#     time.sleep(1)
-#     if b : placeholder.button('Button2', disabled=True, key='2')
+user_auth.get_cook()
+with st.spinner('Loading....'):
+    
+    time.sleep(0.1)
+    st.text('')
+    if user_auth.user_authenticated and st.session_state.authentication_status:
+        with page_content:
+                    
+                    with st.container():
+                        authrized_content()
+                    user_auth.logout()   
+    else:   
+        user_auth.authenticate_user()                    
+st.session_state        
