@@ -25,7 +25,7 @@ class UserAuth:
                                     }for user_info in __all_users.items
             } }
         self.user_authenticated=False
-        
+        self.get_cook()
     def authenticate_user(self):
         # self.authenticator = stAuth.Authenticate(credentials=self.users_dic,cookie_name='cookmook',key='any',cookie_expiry_days=30,preauthorized=[''])
         if not self.user_authenticated  :
